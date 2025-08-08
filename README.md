@@ -21,23 +21,24 @@ Xây dựng hệ thống phát hiện tai nạn giao thông qua video camera gi�
     Hiển thị video output có highlight sự kiện tai nạn
 
 Cấu Trúc Dự Án:
-traffic_accident_detection/
-├── data/ # Input test video data
-│ └── input_video.mp4
-├── outputs/ # Exported video and accident logs
-│ ├── video_out.mp4
-│ └── accident_log.txt
-├── models/ # YOLO model weights
-│ └── yolov8n.pt
-├── src/ # Main source code
-│ ├── main.py # Main entry to run the full pipeline
-│ ├── detector.py # Use YOLO to detect vehicles, people
-│ ├── tracker.py # Track objects across frames
-│ ├── analyzer.py # Analyze motion to detect accidents
-│ ├── visualizer.py # Draw results, highlight accidents
-│ ├── logger.py # Log detected accident events
-│ └── utils.py # Helper functions (e.g., distance calculation)
-├── notebooks/ # Jupyter notebooks for model testing
-│ └── model_testing.ipynb
-├── requirements.txt # Python dependencies
-└── README.md # This file
+
+    traffic_accident_detection/
+    ├── data/ # Input test video data
+    │ └── input_video.mp4
+    ├── outputs/ # Exported video and accident logs
+    │ ├── video_out.mp4
+    │ └── accident_log.txt
+    ├── models/ # YOLO model weights
+    │ └── yolov8n.pt
+    ├── src/ # Main source code
+    │ ├── main.py # Main entry to run the full pipeline
+    │ ├── detector.py # Use YOLO to detect vehicles, people
+    │ ├── tracker.py # Track objects across frames
+    │ ├── analyzer.py # Analyze motion to detect accidents
+    │ ├── visualizer.py # Draw results, highlight accidents
+    │ ├── logger.py # Log detected accident events
+    │ └── utils.py # Helper functions (e.g., distance calculation)
+    ├── notebooks/ # Jupyter notebooks for model testing
+    │ └── model_testing.ipynb
+    ├── requirements.txt # Python dependencies
+    └── README.md # This file
