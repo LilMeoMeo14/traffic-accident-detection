@@ -1,0 +1,10 @@
+venv/
+output/
+**/.ipynb_checkpoints/
+__pycache__/
+*.py[cod]
+*.so
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
