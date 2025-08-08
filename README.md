@@ -23,22 +23,22 @@ Xây dựng hệ thống phát hiện tai nạn giao thông qua video camera gi�
 Cấu Trúc Dự Án:
 
     traffic_accident_detection/
-    ├── data/ # Input test video data
-    │ └── input_video.mp4
-    ├── outputs/ # Exported video and accident logs
-    │ ├── video_out.mp4
-    │ └── accident_log.txt
-    ├── models/ # YOLO model weights
-    │ └── yolov8n.pt
-    ├── src/ # Main source code
-    │ ├── main.py # Main entry to run the full pipeline
-    │ ├── detector.py # Use YOLO to detect vehicles, people
-    │ ├── tracker.py # Track objects across frames
-    │ ├── analyzer.py # Analyze motion to detect accidents
-    │ ├── visualizer.py # Draw results, highlight accidents
-    │ ├── logger.py # Log detected accident events
-    │ └── utils.py # Helper functions (e.g., distance calculation)
-    ├── notebooks/ # Jupyter notebooks for model testing
-    │ └── model_testing.ipynb
-    ├── requirements.txt # Python dependencies
-    └── README.md # This file
+    ├── data/                         # Dữ liệu video test
+    │   └── input_video.mp4
+    ├── outputs/                      # Kết quả xuất ra
+    │   ├── video_out.mp4
+    │   └── accident_log.txt
+    ├── models/                       # Trọng số YOLO
+    │   └── yolov8n.pt
+    ├── src/
+    │   ├── main.py                   # Entry chính: gọi toàn bộ pipeline
+    │   ├── detector.py               # Sử dụng YOLO để phát hiện object
+    │   ├── tracker.py                # Theo dõi đối tượng
+    │   ├── analyzer.py               # Phân tích sự kiện tai nạn
+    │   ├── visualizer.py             # Vẽ kết quả, highlight tai nạn
+    │   ├── logger.py                 # Ghi log + báo cáo sự kiện
+    │   └── utils.py                  # Hàm hỗ trợ (ví dụ: đo khoảng cách)
+    ├── notebooks/
+    │   └── model_testing.ipynb       # Test YOLOv8 trước khi tích hợp
+    ├── requirements.txt
+    └── README.md
